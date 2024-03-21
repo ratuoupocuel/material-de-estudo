@@ -1,0 +1,33 @@
+Destrinchando a Estrutura HTML 5 (ABRA BEM A PAGINA)
+
+<!DOCTYPE html>                              - Esse aqui é obrigatorio pra começar a programar
+<html lang="en">                             - Esse aqui define a lingua que voce vai programar o site junto da abertura da tag html
+<head>                                       - Essa tag e onde voce vai colocar as configurações do seu site como:
+    <meta charset="UTF-8">                   1. Habilitar Charsert UTF-8 pra permitir acetuações e caracteristicas da lingua
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">                 2. Escala da pagina, ocupação da tela no navegador
+    <title>Document</title>                                                                3. Cabeçalho do site o tal do Hello World, Titulo dele.
+</head>                                      - Fechamento da Tag
+<body>
+    
+- Aqui no Body Voce vai colocar o conteudo do seu site
+
+
+</body>
+</html>                                      - Fechamento da Tag html
+
+exemplo:
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Primeiro Exercício</title>
+</head>
+<body>
+    <h1>Olá, Mundo!</h1>
+    <p>Esse é o meu primeiro documento HTLM! Estou muito Feliz!</p>
+</body>
+</html>
+
+

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formatação de Texto</title>
+    <style>
+        mark {
+            background-color: lime;
+        }
+    </style>
+</head>
+<body>
+    <h1>Principais Formatações</h1>
+    <h2>Negrito / Destaque</h2>
+    <p>Nessa Frase temos um <b>termo em negrito</b> usando a tag b (não semantica) </p>
+    <p>Nesta Frase, tenho um <strong>termo em destaque</strong> usando a tag STRONG (semântica)</p>
+    <h2>Itálico / ênfase</h2>
+    <p>Nesta Frase, temos um <i>termo em Itálico</i> usando a tag I (Não semântica).</p>
+    <p>
+       Nesta frase, temos um <em>termo em ênfase</em> usando a tag EM (semântica).
+    </p>
+    <P>Podemos criar também <mark style="background-color: lime;">texto marcado</mark> usando a tag MARK
+    <p>E no outro parágrafo, temos <mark>outro texto marcado</mark> no final.</p> <!--Não e recomendado isso isso pra muitas marcações o melhor e usar o modelo de TAG STYLE no cabeçalho, ele vai servir pros marks dessa página mas não de outras páginas pra isso existem outras 2 maneiras mais avançadas no CSS-->
+    <h2>Texto grande e pequeno</h2>
+    <p>Estamos criando um <big>texto grande</big> e um <small>texto pequeno</small> nesse paragráfo</p>
+    <h2>Texto deletado</h2>
+    <p>Podemos marcar um <del>texto como excluido</del> para indicar que ele deve ser lido mas não considerador</p>
+    <h2>Texto Inserido</h2>
+    <p>Podemos marcar um <ins>texto como inserido</ins> para dar uma enfase e indicar que ele foi adicionado depois.</p>
+    <p>Existe também o <u>sublinhado</u> com a tag U (não semântica).</p> <!--explicando mais uma vez: uma tem sentido e a outra não, semantica e não semantica-->
+    <h2>Texto Sobrescrito</h2>
+    <p>
+    Pra Inserir coisas do tipo x<sup>20+3</sup> <!--Essa tag de formatação é ''pra cima'''-->
+    </p>
+    <h2>Texto Subescrito</h2>
+    <p>
+    Pra Inserir coisas do tipo H<sub>2</sub>O <!--Essa tag de formatação é ''pra baixo'''-->
+    </p>
+</body>
+</html>
+<!--HTML5 hoje é basicamente feito na base de semântica, se é forma é CSS se é sentido é HTML, NÃO CONFUDA TAGS DE FORMA COM TAGS DE SENTIDO-->

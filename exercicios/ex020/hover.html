@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo de Hover (sobre pseudo classes)</title>
+<style>
+    body {
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    div > p {  /*Seletor que significa representação em child. "o div tem um ""filho"" que é o paragrafo, escondido no caso" aqui eu estou mexendo NA DIV*/
+        display: none;
+    }
+
+    div:hover > p { /*Aqui eu estou mexendo em um paragráfo QUE TA DENTRO DA DIV*/
+        display: block;
+        color: white;
+        background-color: red;
+        width: 300px;
+    }
+
+    div:hover {
+        color: red;
+    }
+
+</style>
+</head>
+<body>
+    <h1>Exemplo de hover (sobre pseudo classes)</h1>
+    <p>Passe o mouser sobre o texto abaixo</p>
+    <div>
+        Passe o mouser aqui  <!--Nem tudo é um paragráfo! então nem tudo escrito precisa ficar em p-->
+        <p>NÃO OLHE</p>  <!--O TEXTO FOI ESCONDIDO PELO SELETOR: div > p-->
+    </div>
+    <p>Fim do exemplo</p>
+</body>
+</html>

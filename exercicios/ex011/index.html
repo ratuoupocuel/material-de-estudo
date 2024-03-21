@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Midias em HTML5</title>
+</head>
+<body>
+    <h1>Imagens Dinâmicas</h1>
+    <p>Tente abrir essas imagens em varios dispositivos diferentes ou então aumente e diminiua o tamanho do seu navegador
+    </p>
+
+    <picture> <!--CUIDADO: a BASE é a imagem padrão que voce quer carregar, ACIMA dela são os sourcers, a ordem precisa ser obedecida se não, não funciona, essa solução aqui é somente em HTML.-->
+        <source media="(max-width: 750px)" srcset="imagens/foto-p.png" type="image/png"> <!--pra facilitar a propria vida deixe nome de pastas, arquivos e destinatarios bem simples e tudo com letra minuscula-->
+        <source media="(max-width: 1050px)" srcset="imagens/foto-m.png" type="image/png">  <!--A tag aqui começa com ''source'' ai o visual studio te da as varias opções essa aqui e source media type, essa tag serve pra fazer a imagem se adequar ao tamanho do dispositivo'-->
+        <img src="imagens/foto-g.png" alt="Imagem Flexível">  <!--essas configurações aqui são muito importantes pra adequar os tamanhos, e tambem adeque bem a barra de rolangem-->
+    </picture>
+
+    <h1>Reproduzindo áudio</h1>
+    <p>vamos aprender reproduzir audios em HTML5, a primeira forma (e mais dificil) é essa:</p>
+    
+    <audio preload="metadata" autoplay controls>   <!--Fica de olho no parametros e na diferença entre eles-->
+        <!--Aqui eu vou usar um exemplo de arquivos .ogg e .wav pra avisar que é possivel colocar diferentes tipos de arquivos pra abrir em diferentes navegadores com diferentes compatibilidades-->
+        <source src="midia/Gridlock - John Patitucci.mp3" type="audio/mpeg">
+        <source src="midia/Gridlock - John Patitucci.ogg" type="audio/ogg">
+        <source src="midia/Gridlock - John Patitucci.wav" type="audio/wav">
+        <p>Infelizmente seu navegador não consegue reproduzir audio. <a href="midia/Gridlock - John Patitucci.mp3">Clique aqui para baixar o arquivo MP3</a></p>
+        <!--Ele primeiro vai tentar carregar os arquivos de cima pra baixo, tente evitar escolher arquivos pesados-->
+    </audio>
+
+    <p>Maneira mais simples de colocar o audio é essa:</p> <!--mas isso vai depender muito do seu navegador-->
+    <audio src="midia/Gridlock - John Patitucci.mp3" controls autoplay></audio>
+
+</body>
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabalhando com Links</title>
+</head>
+<body>
+<h1>Usando Links Externos</h1>
+<p>Voce pode acessar meu <a href="https://www.youtube.com/watch?v=LeOVXQDsAIY&list=PLHz_AreHm4dkZ9-atkcmcBaMZdmLHft8n&index=27" target="_blank" rel="external">repositorio pùblico no github </a></p> <!--Esses dois paramentos target=blank e rel=external servem pros visitantes abrirem links em uma aba nova, o rel serve pra indicar pro navegador que o link faz parte de um local externo-->
+<p>Link pra voce acessar a <a href="https://www.youtube.com/watch?v=LeOVXQDsAIY&list=PLHz_AreHm4dkZ9-atkcmcBaMZdmLHft8n&index=27">casa da mãe dina</a></p> <!--Aqui um demostração sem os paramentros, veja e teste a diferença entre eles-->
+<h1>Usando Links Internos</h1>
+<p>Esta é a primeira página do site. se você quiser, pode acessar também a minha <a href="pag002.html" rel="Next">Segunda Página</a></p> <!--quando você faz um link interno não precisa indicar a URL inteira, contanto que a página escolhida esteja na mesma pasta do index.html claro-->
+<p>Voce tambem pode acessar a nossa <a href="Noticias/pag003.html" rel="next">página de noticias</a></p>
+<h1>Links para Download</h1>
+<ul>
+    <li><a href="Livro/01 - História da Internet.pdf" download="01 - História da Internet.pdf" type="application/pdf">Baixar o Livro em PDF</a></li>
+    <li><a href="Livro/Zipado de Historia da Internet.zip" type="application/zip">Livro compactado em ZIP</a></li> <!--Deixei o Type Application só por precaução tem mais midias typpes em iana.org-->
+</ul>
+
+</body>
+</html>

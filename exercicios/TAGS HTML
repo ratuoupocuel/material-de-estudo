@@ -1,0 +1,266 @@
+ Dica: 1. use control+shif+TECLA P pra envelopar coisas
+      2. segure o control e vai clicando com o mouse em locais que voce quer editar ao mesmo tempo
+
+<h1></h1> - vai de 1 a 5: Tag de titulo de Nivel
+
+<p></p> - Tag de paragráfo
+
+<br> - tag semantica de quebra de texto, uso com moderação / tag de (break role / quebra de linha).
+
+*NAVEGANDO ENTRE PAGINAS DO SITE VIA LINKS*
+<h1>Usando Links Internos</h1>
+<p>Esta é a primeira página do site. se você quiser, pode acessar também a minha <a href="pag002.html" rel="Next">Segunda Página</a></p> <!--quando você faz um link interno não precisa indicar a URL inteira, contanto que a página escolhida esteja na mesma pasta do index.html claro-->
+<p>Voce tambem pode acessar a nossa <a href="Noticias/pag003.html" rel="next">página de noticias</a></p>
+
+
+*TRABALHANDO COM LISTAS*
+<ol> - Tag pra criação de listas (Order List)--> <!--Types: 1 A a I i-->
+<ul> - unorderned list, para fazer listas não ordernadas
+<li> - li e uma tag pra item de lista(List Iten)
+<ul type="square">  <!--Como observado ambos ul e ol são personalizaveis com circle, disk e square etc-->
+<ol type="a" start="5"> <!--start é um parametro númerico, por mais que a lista seja alfanúmerica sua comunicação sua comunicação tem que ser númerica-->
+
+
+*TRABALHANDO COM DOWNLOADS COM LINKS EXTERNOS E INTERNOS*
+Exemplo Usando Links Externos (+exemplos com tags de lista)
+
+<p>Voce pode acessar meu <a href="https://www.youtube.com/watch?v=LeOVXQDsAIY&list=PLHz_AreHm4dkZ9-atkcmcBaMZdmLHft8n&index=27" target="_blank" rel="external">repositorio pùblico no github </a></p> <!--Esses dois paramentos target=blank e rel=external servem pros visitantes abrirem links em uma aba nova, o rel serve pra indicar pro navegador que o link faz parte de um local externo-->
+<p>Link pra voce acessar a <a href="https://www.youtube.com/watch?v=LeOVXQDsAIY&list=PLHz_AreHm4dkZ9-atkcmcBaMZdmLHft8n&index=27">casa da mãe dina</a></p> <!--Aqui um demostração sem os paramentros, veja e teste a diferença entre eles-->
+
+Exemplo usando Links para Downloads Internos
+<ul>
+    <li><a href="Livro/01 - História da Internet.pdf" download="01 - História da Internet.pdf" type="application/pdf">Baixar o Livro em PDF</a></li>
+    <li><a href="Livro/Zipado de Historia da Internet.zip" type="application/zip">Livro compactado em ZIP</a></li> <!--Deixei o Type Application só por precaução tem mais midias typpes em iana.org-->
+</ul>
+
+
+<u> sublinhado
+
+<a> - tag de ancora (anchor) que acompanha outra como ''href'' é usada para criar hiperlinks, que podem levar a outra parte da mesma página, a outra página do mesmo site, a uma página diferente em um site diferente ou a um arquivo para download. O destino do link é especificado no atributo href. Além disso, você pode usar o atributo "target" para definir onde o link será aberto.
+
+PS: target=blank e rel=external servem pros visitantes abrirem links em uma aba nova, o rel serve pra indicar pro navegador que o link faz parte de um local externo, tambem tem target_self pra abrir na propria aba
+
+<strong></strong> - tag de termo em destaque
+
+<em></em> - tag de termo em ênfase
+
+<del></del> - tag onde Podemos marcar um texto como excluido para indicar que ele deve ser lido mas não considerador
+
+&lt;br&gt; - pra fazer os sinais <>
+
+<style></style> - tag de marcação STYLE serve pra implementação de cores em textos que precisam passar por um maior escolpo da página, ela precisa ser colocado no HEAD como pro exemplo, o parametro: mark {
+background-color: lime;
+}
+
+alguns parametros comuns na tag style são
+
+1. font-size: - tamanho da fonte
+2. background-color: - cor de fundo
+3. font-family: estilo de letra
+4. text-align: justify; - pra ajeitar o texto
+5. background-image: linear-gradient - usado pra fazer fundos em gradiente
+6. background-attachment: fixed; - fazer com que a imagem para com o rolamento, geralmente usado como height
+
+* {  esse daqui è para o tamanho da imagem de background (alçance na pagina)
+            height: 100%; 
+        }
+
+
+<mark style="background-color: lime;">texto marcado</mark> - Essa tag de marcação STYLE, recomendado apenas usos importantes e moderados
+
+<link rel="" href="" type=""> - tag pra uso de icon de pagina. ela precisa ser colocada no HEAD
+
+
+link:css - essa tag serve pra criar um ARQUIVO DE ESTILO CSS pra uma melhor distribuição, alteração e controle entre varias páginas de um projeto 
+
+<img src="" alt=""> - tag de imagem simplista
+
+<source media="(min-width: )" srcset=""> - Tag usada pra midia de imagem fotos etc personalizada pra variados casos
+
+<video src=""></video> - Tag usada pra implementação mais simplista de video
+
+<source src="" type=""> - Tag usada pra implementação mais detalhada de video personalizada pra variados casos
+
+@charset "UTF-8"; - Tag de regra pra palavras com acentuação
+
+<p style="text-align: right;"> -  
+
+diferença entre usar medidas absolutas (cm, mm, in, pt, px, pc):
+*Existem medidas absolutas e medidas relativas, Absolutas: cm, mm, in, px, pt(ponto), pc(paica) Relativas: em, ex, rem, vw, vh, %*/ Geralmente o que è mais usado é: px e em, somente essas 02 medidas (Utilize as recomendações da W3C) ex:
+
+Variações para fontes (lembrando que a fonte precisa te oferecer todas essas variações)
+
+font-size: 16px; 
+
+weight - Peso (lighter, normal, bold, bolder)
+
+width - largura (mexe tambem com de todo o paragrafo, o alçance dele na página)
+
+height - altura
+
+exemplo:
+font-size: 1em;
+font-weight: normal; ou bold [Negrito]
+font-style: italic; [Italico]
+text-decoration: underline [Sublinhado]
+
+geralmente as declarações mais usadas são (exemplo):
+font-family: 'Work Sans', sons-serif;
+font-weight: bolder;
+font-size: 3em;
+font-style: italic;
+
+em shorthand (condensamento de configurações é uma forma de voce colocar as mesma informações acima de forma mais resumida, o ORDEM das propriedades é muito importante pro shorthand)
+font: italic bolder 3em 'Work Sans', sans-serif;  (não existe shorthand pra tudo mas existe varios que voce pode usar)
+
+alguns exemplos mais detalhados de tags pra CSS:
+* {
+    /*height: 100%; não tá funcionando aqui*/
+font-family: Arial, Helvetica, sans-serif;
+}
+
+p {
+    text-align: justify;  /*Essa tag serve pra arrumar o texto do site e fazer ele aproveitar toda a página*/
+}
+
+body {
+    background-image: linear-gradient(to top,#008F8C, #13678A);
+    background-attachment: fixed; /*Esse aqui deixa o fundo sempre ajustado na tela sem criar quebras*/
+}
+
+main { /*Esse aqui diz respeito ao conteudo dentro de main*/
+    background-color: #ffffff;
+    width: 600px; /*Largura do fundo do main*/
+    padding: 10px; /*acolchoamento do texto no quadrado*/
+    margin: auto; /*Automaticamente vai centralizar o texto independetimente do tamanho da tela*/
+    border-radius: 10px;  /*deixa as bordas da area arredondadas, dando mais harmonia visual*/
+    box-shadow: 5px 5px 15px #adadadbd;
+
+    /*Paramentros de sombra na area, o primeiro é o quanto a sombra vai andar pro lado, o segundo e o quanto ela vai andar pra baixo, o terceiro é o quanto ela vai se espalhar e o ultimo é quanto de transparencia com a cor ela vai ter*/
+}
+
+h1 {
+    color: #45C4B0;
+    text-align: center;  /*Centraliza o texto em questão*/
+    text-shadow: 1px 1px rgb(48, 46, 46);
+}
+
+h2 {
+    color: #9ed16f;
+    text-shadow: 1px 1px rgb(48, 46, 46);
+}
+
+Sobre fontes:
+
+@font-face {
+    font-family: 'FonteLove';
+    src: url('love larry ttf.ttf') format('opentype');
+    font-weight: normal;
+
+    /*
+        Tipos de format()
+        - opentype (otf)
+        - truetype (ttf)
+        - embedded-opentype
+        - truetupe-aat (apple advanced typography)
+        - svg
+    */
+}
+- seletor especial pra fontes externas que voce baixou de outros locais
+
+
+
+    <title>Alinhamentos (nunca alinhe no HTML somente no CSS)</title>
+    <style>
+        /*NOS TIPOS DE ALINHAMENTO O QUE VALE É O ULTIMO A SER CONFIGURADO, POR ISSO QUE EU POSSO MUDAR O H1,H2 E P POR FORA MESMO CONSIDERANDO UM TEXT ALIGN NO BODY DIFERENTE, só não entendo por que deixar um paramentro text align no body então...*/
+        body {
+            font: normal 16px Arial, Verdana, serif;
+            text-align: left;
+        }
+        h1 {
+            text-align: center;
+        }
+        h2 {
+            text-align: center;
+        }
+        p {
+            text-align: justify; /*o texto normalmente tem um alinhamento dos dois lados idenpendentimente do tamanho do texto, isso funciona de forma diferente da centralizaçâo que poem ate mesmo a quebra de linha dos paragrafos no centro*/
+            text-indent: 30px; /*Essa propriendade é para recuo de paragro no inico do texto, o inicio do paragrafó vai ganhar um identação vai ficar mais longe dos cantas*/
+ 
+
+
+
+*Classes, id e pseudo classes:*
+
+em HTML é id    = em CSS é # (hashtag) *Pode ter o mesmo id em documentos diferentes mas não pode ter 2 ids dentro do mesmo HTML*
+em HTML É class = em CSS é . (ponto)
+id tem titulo unico
+class pode ser multipla ter varias classes, e uma tag pode herdar multiplas classes       
+
+<!--Em relação as ids e classes não nomeie elas em relação a sua forma e sim a sua FUNÇÃO por exemplo em vez colocar no h1 principal a cor em que o titulo é escrito, coloque a função dele: tituilo, paragrafro etc, mas evite nomeia baseado no estilo e forma deles-->
+<h1 id="principal">Criando Sites com HTML e CSS</h1> <!--O W3C diz que voce não pode usar o mesmo id em tags diferentes no caso ''principal'' não poderia se repetir'-->
+<h1 class="subtitulo destaque">Aprendendo HTML</h1>  <!--Perceba como um elemento pode pertencer a multiplas classes esse aqui esta em duas "subtitulo" e "destaque", PS: id sobrepoem as configuraçôes de classe-->
+/*tudo na questão de id e classe é sobre herdar e sobrepor, uma questão de hierarquiar onde a ultima configuração é a mais considerada, mas ele sempre herda o que vem da camada acima*/
+
+
+<div> é um contêiner genérico de blocos que serve para dividir semanticamente partes de uma página web, antes de qualquer estilização ou formatação. É muito útil para estruturar o conteúdo e criar layouts,  ele não define por si só nenhum significado semântico, É um dos elementos mais usados em HTML para criar layouts, Exemplos comuns de uso são para criar cabeçalhos, rodapés, seções do corpo, caixas laterais etc.
+/*: (dois pontos) é uma pseudo-classe, elas tem que esta relacionadas a um estado de um determinado elemento*/
+div:hover /*esse elemento serve pra revelar o conteudo quando voce passar o mouser por cima*/
+
+ <div id="d1">01</div> <!--Div é um espaço qualquer que ocupa tudo horizontalente aqui esta um exemplo-->
+
+*exemplo pra CSS:*
+ div#d1{
+    font-size: normal; 
+}
+
+    /*  
+        NÃO ESQUEÇA: SELETORES PERSONALIZADOS
+     #  =  id
+     .  =  class
+     :  =  pseudo-class
+     :: =  pseudo-element
+     >  =  children
+
+        VISITE O EXERCICIO 20 PRA MAIS INFORMAÇÕES
+
+    */
+
+
+   x{ MODELO DE CAIXAS (AULA CONCEITUAL)
+
+ANATOMIA DE UMA CAIXA:
+
+- "caixa": todo elemento visivel dentro da tela é um elemento de caixa
+
+toda caixa tem temanho, esse tamanho é especificado com 2 medidas altura e largura:
+
+- height (altura): 
+
+- width (largura): 
+
+Existem 2 tipos de caixa:
+
+1. box-level - Isolado, Idenpendente, sempre se inicia numa linha nova, ocupa a largura inteira (100%), sempre que a caixa for começar ele vai pular o paragrafo, vai tomar conta de todo aquela linha e depois ele vai pular o conteudo pra continuar na linha de baixo
+
+exemplo: <div>, <h1a6>, <p>, <main>, <header>
+
+2. inline-level - Não quebra a linha, não ocupa o espaço inteiro, não pula pra proxima linha, não quebra a linha, ocupa sò o tamanho que precisa na mesma linha e continua o conteudo.
+
+exemplo: <span>, <a>, <code>, <small>, <em>, <sub>
+
+
+- border - é a borda da caixa, ela é uma linha que circunda o conteudo (caixa)
+
+não confundir a caixa (----) com a borda (___) a caixa tem um tamanho especificado por 2 medidas:
+
+
+- padding - preenchimento interno (da borda pra dentro), pode ser calculado e configurado de qualquer dimensão, cima, baixo, lado etc
+
+- margin - espaço externo (da boda pra fora), pra evitar que a borda de 02 elementos diferentes se colem
+
+- contorno (outline) - é o contorno ou o traçado, fica FORA da borda porem DENTRO do espaço do margim, LEMBRANDO QUE BORDA E DENTRO DO ELEMENTO O TRAÇADO É FORA 
+}
+
+shorthands - propriedades de multiplos valores
+

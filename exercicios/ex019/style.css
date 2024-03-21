@@ -1,0 +1,62 @@
+@charset "UTF-8";
+
+/*
+
+em HTML é id    = em CSS é # (hashtag), pode ter o mesmo id em documentos diferentes mas não pode ter 2 ids dentro do mesmo HTML
+em HTML É class = em CSS é . (ponto)
+id tem titulo unico
+class pode ser multipla ter varias classes, e uma tag pode herdar multiplas classes
+
+*/
+
+body {
+    background-color: #b4e2b2;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+h1 {                /*A existencia desse aqui ainda é util pra quem não está dentro de uma classe*/
+    color: green;
+    text-align: left;
+}
+
+h1#principal {      /*tudo na questão de id e classe é sobre herdar e sobrepor, uma questão de hierarquiar onde a ultima configuração é a mais considerada, mas ele sempre herda o que vem da camada acima*/
+    text-align: center;
+    background-color: green;
+    color: white;
+}
+
+.subtitulo {
+    text-align: center;
+    color: gray;
+}
+
+
+h2 {                /*A existencia desse aqui ainda é util pra quem não está dentro de uma classe*/
+    color: grey;
+}
+
+.basico {           /*não precisa dizer que se trata de um h2 de novo, ao menos que vc queira lembrar*/
+    text-align: left;
+    color: rgb(214, 154, 25);
+}
+
+.intermediario {
+    text-align: left;
+    color: rgb(44, 25, 214);
+}
+
+.avançado {
+    text-align: left;
+    color: hwb(0 0% 0%)
+}
+
+.destaque {
+    background-color: hwb(54 8% 0% / 0.87)
+}
+
+
+p {
+    color: rgb(1, 1, 2);
+    text-align: justify;
+}

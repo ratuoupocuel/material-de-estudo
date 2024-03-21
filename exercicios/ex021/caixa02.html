@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping Tags Semanticos</title>
+    <link rel="stylesheet" href="stylegroupingtags.css">
+</head>
+<body> <!--ISSO TUDO ABAIXO SÃO DIVs Semanticas chamadas de grouping tags-->
+
+    <header> <!--Tag semantica de Cabeçalho, não confundir com head, que é as configuraçôes do site-->
+        <h1>Meu Site</h1>
+        <nav> <!--Tag pra criação de menus-->
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+        </nav>
+    </header> <!--tudo aqui é tag semantica e tambem é visto como uma div, mas aqui e valorizado mais pelos mecanismos de buscas -->
+
+    <main> <!--Tag semantica de Conteudo principal-->
+        <section id="assuntos">
+            <p>algo aqui??</p>
+        </section>
+
+        <section id="noticias">
+            <article>
+                <h2>Noticias Sobre o Brasil</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi similique dolorum sapiente reprehenderit velit dolorem voluptatem asperiores at ex repellendus, delectus illo labore totam nam ipsam quam, praesentium voluptatum corporis.</p>
+                <aside>
+                    <p>artigo escrito pelo gustavo guanabará</p>
+                </aside>
+            </article>
+
+            <article>
+                <h2>Noticias sobre Esporte</h2>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Inventore sed accusamus sint, soluta hic ratione natus, ipsam excepturi tempore neque at nam dolorem, minus reiciendis et repellat accusantium nihil unde.</p>
+                <aside>
+                    <p>Atigo escrito pelo nego do borel</p>
+                </aside>
+            </article>
+        </section>
+    </main> <!--Tag do conteudo principal-->
+
+    <footer> <!--Tag do rodapé-->
+        <p>Desenvolvido pelo cursoemvideo</p>
+    </footer>
+
+</body>
+</html>
+
+tags de agrupamentos anteriores mas ainda validos:
+<div>caixa do tipo box level</div>
+<span>caixa do tipo inline level</span>

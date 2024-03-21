@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Listas</title>
+</head>
+
+<body>
+    <h1>Trabalhando com Listas</h1>
+    <h2>Listas Ordenadas</h2>
+    <ol type="I"> <!--Tag pra criação de listas (Order List)--> <!--Types: 1 A a I i-->
+        <li>Arcorda</li> <!--li e uma tag pra item de lista(List Iten)-->
+        <li>Ligar para o recife</li>
+        <li>Tomar café</li>
+        <li>Escovar os dentes</li>
+    </ol>
+
+    <h2>Lista não Ordenadas</h2> <!--Não precisa enumerar no caso-->
+    <ul type="square">  <!--Como observado ambos são personalizaveis com circle, disk e square-->
+        <li>Pão</li>
+        <li>Leite</li>
+        <li>Tomate</li>
+        <li>Arroz</li>
+        <li>Feijão</li>
+    </ul>
+
+    <h2>Juntando Listas versão 1.0</h2>
+    <ol>
+        <li>Antigas</li> <!--Aqui fizemos o processo de Aninhamento (de ninho) uma LISTA dentro da outra isso tudo e possivel aqui-->
+        <ol type="a">
+            <li>Clipper</li>
+            <li>Visual Basic</li>
+            <li>Fortran</li>
+            <li>Delphi</li>
+        </ol>
+        <p></p>
+        <li>Novas</li>
+        <ol type="a" start="5"> <!--start é um parametro númerico, por mais que a lista seja alfanúmerica sua comunicação sua comunicação tem que ser númerica-->
+            <li>PHP</li>
+            <li>Python</li>
+            <li>JavaScript</li>
+            <li>Kotlin</li>
+        </ol>
+    </ol>
+
+    <h2>Jogos que mais joguei</h2>
+    <ol>
+        <li>Playstation 2</li>
+        <ul type="square">
+            <li>GTA San Andreas</li>
+                <ul type="circle">
+                    <li>Versão Super herois</li>
+                    <li>Versão Dragon Ball</li>
+                </ul>
+            <li>God Of War 2</li>
+            <li>Shadow of the Colossus</li>
+            <li>Crash Badicoon Rage of Fury</li>
+            <li>Resident Evil 4</li>
+            <li>Bully Scholarship Edition</li>
+        </ul>
+        <p></p>
+        <li>Nintendo 64</li>
+        <ul type="square">
+            <li>Super Mario 64</li>
+            <li>Star Fox</li>
+            <li>Quest 64</li>
+            <li>JetSky 64</li>
+            <li>Star Wars Roger Squadron</li>
+            <li>Ready2Rumble Boxing Round 2</li>
+            <li>The Legend of Zelda Ocarina of Time</li>
+        </ul>
+        <p></p>
+        <li>Super Nintendo</li>
+        <ul type="square">
+            <li>Super Mario World</li>
+            <li>Zelda A Link to Past</li>
+            <li>Bomberman</li>  
+            <li>Street Fight</li>
+            <li>Mortal Kombat</li>
+            <li>Contra</li>
+            <li>Sonic</li>
+        </ul>
+    </ol>
+    <p></p>
+    <h2>Lista de Definições</h2>
+    <dl> <!--Essa tag serve pra criar lista de definições, e como se fosse um dicionario voce vai colocar o termo com a tag ''dt'' e a definição em ''dd''-->
+        <dt>HTML</dt>
+        <dd>Linguagem de marcação para criação do conteúdo de um site.</dd>
+        <dt>CSS</dt>
+        <dd>Linguagem de marcação para criação do design de um site.</dd>
+        <dt>JavaScript</dt>
+        <dd>Linguagem de programação para criação de interatividade de um site.</dd>
+    </dl>
+
+
+    <!--Voce pode usar o macete: ol>li*4 pra criar listas mais rapido-->
+
+</body>
+</html>

@@ -1,0 +1,27 @@
+h1,h2,h3 etc. Não é tamanho de letra, é titulo de NIVEL
+
+Index Significa Indice 
+
+HTML5 não se foca mais em FORMA se foca em SEMANTICA, Significado. 
+
+Forma agora fica toda de responsabilidade das CSS
+
+Os Estilos (CSS) podem modificar o tamanho mas não a carga de um arquivo
+
+O Google grava tudo na ''memoria'' dele que for pra dentro de HTML então um site bem construido com a semantica correta pra cada uma de suas vertendes aumenta o score do seu site (SEO), lembrando que seguindo essa lógica, um site mal construido acaba ganhando um score baixo diminuindo suas chances de ser visto, da mesma forma que o comportamento dos usuarios dentro do seu site tambem mexe no score dele (bounce rate ou taxa de rejeição) sempre se preocupe com o usuario não esqueça que o google é um grande algoritmo
+
+Cuidado com direitos autorais, videos, fotos, arquivos, audio, tudo que voce for colocar no seu site precisa ser devidamente legal
+
+no caso do HTML 5 os padrôes mais suportados são os formatos: MP4,M4V, WEBM, OGV (O ideal e ter varios arquivos com varios formatos)
+
+Estilos CSS Inline - significa que ele é feito na mesma linha
+
+Estilo CSS Internos - 
+
+sobre a tag style:
+alguns parametros comuns são
+
+1. font-size: - tamanho da fonte
+2. background-color: - cor de fundo
+3. font-family: estilo de letra
+4. text-align: justify; - pra ajeitar o texto

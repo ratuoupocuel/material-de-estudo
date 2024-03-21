@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vídeos com HTML5</title>
+</head>
+<body>
+    <h1>Inserindo vídeos hospedados localmente</h1>
+    <p>Este video esta hospedado em meu próprio servidor, esse exemplo a baixo é da forma ''fácil''</p>
+    <video src="midia/meu-video-720.mp4" width="560" controls>Teste de Video</video> <!--mudando a extensão do vídeo voce pode ir testando outros formatos além de mp4 caso você queira ou precise, sempre procure saber quais extensões funciona pro destino da sua página ou então faça igual na tag video e vai adicionando varias versões da mesma midia...-->
+    
+    <p>Exemplo mais dificil</p> <!--LEMBRESE QUE A ORDEM AQUI FAZ TOTAL DIFERENÇA, o navegador vai testando um por um até conseguir oferecer um formato compativel mas caso nenhum funcione ele vai mostrar o aviso: ''seu navegador não tem compatibilidade com reprodutor de video''-->
+    <video width="560" poster="imagens/capa.png" controls>
+        <source src="midia/meu-video-convertido2kpra720p.mp4" type="video/mp4">
+        <source src="midia/meu-video-2kpra720p.webm" type="video/webm">
+        <p>Seu navegador não tem compatibilidade com reprodutor de video</p>
+    </video>
+    <!--UMA QUESTÃO MUITO IMPORTANTE: A tag VIDEO junto desses processos que fizemos aqui é para a disponibilização de videos em hospedagem proprio, isso pode acarretar em uma utilização maior de banda e consequentimente e maior despesas com consumo.-->
+
+    <h1>Inserindo vídeos do Youtube</h1>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/-cR-0Ggi3B4?si=dyk7EtRzZs9sllkL"
+        title="YouTube video player" frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen>
+    </iframe>
+    <!--LEMBRE-SE que se voce tem o video do cliente no site e no youtube voce cria mais abrangencia com o google o que pode ser bom pra SEO, ter um canal proprio pro cliente é uma ideia interessante.-->
+
+    <h1>Inserindo videos do Vimeo</h1>
+    <iframe src="https://player.vimeo.com/video/874107330?h=401b434049&byline=0" width="560" height="315" frameborder="0"
+        allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+    <p><a href="https://vimeo.com/874107330"></a>
+
+</body>
+</html>

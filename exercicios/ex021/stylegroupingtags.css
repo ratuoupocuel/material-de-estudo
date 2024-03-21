@@ -1,0 +1,42 @@
+@charset "UTF-8";
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: gray;
+    width: 50em;
+    text-align: center;
+    margin: auto; /*Automaticamente vai centralizar o texto independetimente do tamanho da tela, e junto disso aparentimente ele leva o resto do Bloco consigo NÃO SEI SE É A MELHOR SAIDA*/
+    
+}
+
+header {
+    background-color: rgb(255, 255, 255);
+    text-align: center;
+}
+
+main {
+background-color: rgb(255, 255, 255);
+
+}
+
+section#noticias {
+    color: red;
+    text-align: center;
+
+}
+    
+
+section {
+
+}
+
+footer {
+
+}
+
+article {
+
+}
+
+
+

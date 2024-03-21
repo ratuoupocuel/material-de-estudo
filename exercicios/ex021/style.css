@@ -1,0 +1,65 @@
+@charset "UTF-8";  /*Deixar essa porra sempre na linha do topo*/
+
+h1 { /*ELEMENTO DO TIPO: BOX-LEVEL (display block)*/
+
+height: 300px; /*Elemento do tipo: BOX SIZING, altura*/
+width: 300px; /*Elemento do tipo: BOX SIZING, largura*/
+
+/*display: inline; Voce poderia usar esse pra transformar blocos Box Level em Inline, mas isso unutiliza o altura e largura acima por que inline não é assim*/
+background-color: lightgray;
+border-width: 10px;
+border-style: solid;
+border-color: darkgray;
+
+border: 10px solid darkgray;
+/*Exemplo em Shorthand, que no caso iram se sobressair ao resto das propriedades*/
+
+/*o padding pra vc preencher por volta de todo o conteudo (caixa) voce precisa configurar desse jeito nessa ordem de relogio*/
+padding-top: 10px;
+padding-right: 10px;
+padding-bottom: 10px;
+padding-left: 10px;
+
+padding: 10px 10px 10px 10px; /*Exemplo em Shorthand*/ /*Como todas as propriedades são iguais voce poderia deixar o Shorthand apenas "padding: 10px" que tambem funcionaria.*/
+
+margin-top: 10px;
+margin-right: 10px;
+margin-bottom: 20px;
+margin-left: 10px;
+
+margin: 10px auto 20px auto; /*Exemplo em Shorthand*/ /*Perceba como é possivel configurar no "auto" seletores especificos*/
+
+/*margin: auto#; Elementos de caixa voce centraliza usando essa medida - não ta funcionando tem que ver por que*/
+
+outline-width: 2px;
+outline-style: dashed /*outline-color: não esta funcionando*/
+
+/*Não estou coseguindo fazer shorthand pra essa propriedade*/
+}
+
+a { /*ELEMENTO DO TIPO: INLINE-LEVEL*/
+    /*MAIS EXEMPLOS COM E SEM SHORTHAND*/
+
+    /*LEMBRESE: shorthands - propriedades de multiplos valores*/
+
+    border-width: 2px;
+    border-style: solid;
+    border-color: red;
+
+    border: 2px solid red;
+
+    padding-top: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+
+    padding: 10px;
+
+    margin-top: 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+
+    margin: 10px;
+
+}

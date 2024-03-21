@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo-classes</title>
+<style>
+    div { /*Elemento que funciona como um container generico pra outros elementos HTML*/
+        display: inline-block;  /*serve pra deixar os elementos tudo na mesma linha*/
+        background-color: gray;
+        border: 1px solid black; /*Shorthand de borda com largura, tipo e cor*/
+        text-align: center; /*Centralizar o conteudo*/
+        height: 200px; /*- altura*/
+        width: 200px; /*- largura*/
+    }
+
+/*Lembre-se que # é uma id, . (ponto) é uma classe, é : (dois pontos) é uma pseudo-classe*/
+
+/*Deixei esses aqui com font size só pra exemplo do uso de id, quem esta ativo de verdade é o div:hover*/
+div#d1{
+    font-size: normal;
+}
+div#d2{
+    font-size: normal;
+}
+div#d3{
+    font-size: normal;
+}
+
+/*: (dois pontos) é uma pseudo-classe, elas tem que esta relacionadas a um estado de um determinado elemento*/
+div:hover { /*esse elemento serve pra esconder ou revelar o conteudo quando voce passar o mouser por cima, geralmente ela precisa de outros parametros em seletores pra criar o efeito desejado*/
+background-color: yellow;
+}
+</style>
+
+</head>
+<body>
+    <div id="d1">01</div> <!--Div é um espaço qualquer que ocupa tudo horizontalente-->
+    <div id="d2">02</div>
+    <div id="d3">03</div>
+</body>
+</html>
